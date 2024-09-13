@@ -1,0 +1,88 @@
+
+
+.loginpage{
+    
+    width: 700px;
+    height: 500px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    padding: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: auto;
+    
+
+}
+.thumb{
+      margin: auto;
+      width: 100px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: lightseagreen;
+      padding-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+}
+.user-box{
+    margin-top: 20px;
+}
+.username{
+    width: 230px;
+    border: none;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    padding-bottom: 5px;
+    
+}
+.password-box{
+    margin-top: 20px;
+}
+.password{
+    width: 230px;
+    border: none;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    padding-bottom: 5px;
+    
+}
+.forget{
+    margin-top: 20px;
+    margin-right: 120px;
+   color: rgb(218, 94, 94); 
+
+}
+.login{
+    margin-top: 15px;
+}
+.click{
+    font-weight: bold;
+    background-color: cyan;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 20px;
+
+}
+.method{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      row-gap: 5px;
+      
+}
+.member{
+    color: rgb(39, 35, 35);
+    font-size: 15px;
+
+    
+}
+.signup{
+    color: rgb(0, 132, 255);
+    margin-left: 3px;
+    font-size: 15px;
+}
