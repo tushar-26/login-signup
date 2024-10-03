@@ -20,10 +20,11 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background: linear-gradient(to right, rgb(182, 179, 179), rgb(179,119,119));
+   /* background: linear-gradient(to right, rgb(182, 179, 179), rgb(179,119,119));*/
    /* background-color: rgb(179, 119, 119);*/
     /*background: linear-gradient(to right, rgb(37, 105, 105), rgb(24, 109, 120));*/
-   /* background: rgba(39, 39, 39, 0.4);*/
+    /*background: rgba(39, 39, 39, 0.4);
+   
 }
 .nav{
     position: fixed;
@@ -200,6 +201,11 @@ header{
     }
     .nav-menu.responsive{
         top: 100px;
+    }
+    .nav-logo{
+        width: 50px;
+        height: 35px;
+        border-radius: 10px;
     }
     .nav-menu{
         position: absolute;
