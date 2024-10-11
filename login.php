@@ -1,3 +1,11 @@
+<?php 
+
+session_start();
+if (isset($_SESSION["user"])){
+    header("Location: index.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="logo.jpg">
-    <link rel="stylesheet" href="lo.css">
+    <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
 <body>
@@ -18,15 +26,15 @@
                 <ul>
                     <li><a href="#" class="link active">Home</a></li>
                     <li><a href="#" class="link">About</a></li>
-                    <li><a href="e-login/names.html" class="link">Members</a></li>
+                    <li><a href="names.html" class="link">Members</a></li>
                     <li><a href="#" class="link">Theatres</a></li>
                     <li><a href="#" class="link">Movies</a></li>
                 </ul>
             </div>
             <div class="nav-btns">
                 
-                    <button class="l-btn" id="loginBtn">Sign In</button>
-                    <button class="s-btn" id="registerBtn">Sign Up</button>
+                  <button class="l-btn" id="loginBtn">Sign In</button>
+                  <a href="register.php"><button class="s-btn" id="registerBtn">Sign Up</button></a>
 
             </div>
             <div class="nav-menu-btn">
@@ -35,23 +43,49 @@
         </nav>
 
         <div class="form-box">
+           <?php 
            
-            <form class="login-container" id="login" action="login-signup.php" method="post">
+           if(isset($_POST["Signin"])){
+
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+            require_once('database.php');
+            $sql = "SELECT * FROM users WHERE email = '$email'";
+            $result = mysqli_query($conn, $sql); 
+            $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+            if($user){
+                if(password_verify($password, $user["password"])){
+                    session_start();
+                    $_SESSION["user"] = "confirmed";
+                    header("Location: index.php");
+                    die();
+                }else{
+                    echo "password doesn't match or exist in database";
+                }
+
+            }else{
+                echo"email doesn't match or exist in database";
+            }
+
+           }
+           
+           ?>
+            <form class="login-container" id="login" action="login.php" method="post">
                 <div class="top">
-                    <span>if you dont have a account<a href="#" onclick="register()">Sign Up</a></span>
+                    <span>if you dont have a account<a href="register.php" onclick="register()">Sign Up</a></span>
                     <header>Login to EntertainEase 🎥</header>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Username or Email" name="name">
+                    <input type="text" class="input-field" placeholder="Enter  Email" name="email">
                     <i class="bx bx-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password" name="password">
+                    <input type="password" class="input-field" placeholder="Enter Password" name="password">
                     <i class="bx bx-lock-alt"></i>
                 </div>
                
                 <div class="input-box">
-                    <input type="submit" class="submit" value="Sign In" name="Sign In">
+                    <input type="submit" class="submit" value="Sign In" name="Signin">
                 </div>
                 <div class="two-col">
                     <div class="one">
