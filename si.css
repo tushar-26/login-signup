@@ -1,3 +1,5 @@
+/* Shared styles for both Login and Signup pages */
+
 /* POPPINS FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -8,7 +10,6 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-   /* background: url("1.jg");*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,25 +21,23 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-   background: linear-gradient(to right, rgb(255, 167, 167), rgb(255, 0, 0));
-   /* background-color: rgb(179, 119, 119);*/
-    /*background: linear-gradient(to right, rgb(37, 105, 105), rgb(24, 109, 120));*/
-    /*background: rgba(39, 39, 39, 0.4);*/
-   
+    background: linear-gradient(to right, rgb(255, 167, 167), rgb(255, 0, 0));
 }
 .nav{
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     line-height: 100px;
     background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    
     z-index: 100;
 }
 .nav-logo{
     margin-top: 20px;
+    margin-left: 80px;
 }
 .nav-menu ul{
     display: flex;
@@ -57,7 +56,13 @@ body{
     border-bottom: 2px solid #fff;
     
 }
-.nav-button .btn{
+.nav-btns{
+    
+    margin-right: 80px;
+}
+ .l-btn, .s-btn{
+    
+    margin: 0 7px 0 7px;
     width: 130px;
     height: 40px;
     font-weight: 500;
@@ -66,48 +71,32 @@ body{
     border-radius: 30px;
     cursor: pointer;
     transition: .3s ease;
-}
-.btn:hover{
-    background: rgba(255, 255, 255, 0.3);
-}
-#registerBtn{
-    margin-left: 15px;
-}
-.btn.white-btn{
-    background: rgba(255, 255, 255, 0.7);
-}
-.btn.btn.white-btn:hover{
-    background: rgba(255, 255, 255, 0.5);
+    &:hover{
+        background: rgb(255, 255, 255);
+    }
 }
 .nav-menu-btn{
     display: none;
 }
 .form-box{
+    margin-top: 0px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 512px;
-    height: 420px;
+    height: 550px;
     overflow: hidden;
-    z-index: 2;
+    
 }
-.login-container{
+.login-container, .register-container{
     position: absolute;
-    left: 4px;
     width: 500px;
     display: flex;
     flex-direction: column;
     transition: .5s ease-in-out;
 }
-.register-container{
-    position: absolute;
-    right: -520px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    transition: .5s ease-in-out;
-}
+
 .top span{
     color: #fff;
     font-size: small;
@@ -115,9 +104,9 @@ body{
     display: flex;
     justify-content: center;
 }
-.top span a{
+.top a{
+    color:#fff;
     font-weight: 500;
-    color: #fff;
     margin-left: 5px;
 }
 header{
@@ -142,8 +131,6 @@ header{
     outline: none;
     transition: .2s ease;
 }
-
-
 .input-field:hover, .input-field:focus{
     box-shadow: rgb(0, 200, 255) 0px 0px 20px;
 }
@@ -169,7 +156,7 @@ header{
     outline: none;
     background: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    transition: .3s ease-in-out;
+    transition: .3s
 }
 .submit:hover{
     background: rgba(255, 255, 255, 0.5);
@@ -194,7 +181,7 @@ header{
     text-decoration: underline;
 }
 @media only screen and (max-width: 786px){
-    .nav-button{
+    .nav-btns{
         display: none;
     }
     .nav-menu.responsive{
@@ -242,7 +229,7 @@ header{
     }
     .form-box{
         width: 100%;
-        height: 500px;
+        height: 800px;
     }
     .register-container, .login-container{
         width: 100%;
