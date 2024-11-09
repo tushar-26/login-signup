@@ -82,7 +82,6 @@ nav ul li a.act,a:hover{
     display: inline-block;
 }
 
-
 @media(max-width: 400px){
     label.logo{
         font-size: 20px;

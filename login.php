@@ -34,7 +34,7 @@ if (isset($_SESSION["user"])){
             <div class="nav-btns">
                 
                   <button class="l-btn" id="loginBtn">Sign In</button>
-                  <a href="register.php"><button class="s-btn" id="registerBtn">Sign Up</button></a>
+                  <a href="re.php"><button class="s-btn" id="registerBtn">Sign Up</button></a>
 
             </div>
             <div class="nav-menu-btn">
@@ -60,11 +60,29 @@ if (isset($_SESSION["user"])){
                     header("Location: index.php");
                     die();
                 }else{
-                    echo "password doesn't match or exist in database";
+                    
+                    echo '<div id="error-message" style="background-color:black; color: red; font-size:17px; font-weight:bold;
+                 font-family:Arial; margin-left:120px; margin-top:100px; padding: 13px 25px 13px 25px; box-shadow: red inset 0 0 15px;">
+                Password doesn\'t match 
+                 </div>';
+              echo '<script>
+            setTimeout(function() {
+                document.getElementById("error-message").style.display = "none";
+            }, 5000); // 5000 milliseconds = 5 seconds
+             </script>';
+ 
                 }
 
             }else{
-                echo"email doesn't match or exist in database";
+                echo '<div id="error-message" style="background-color:black; color: red; font-size:17px; font-weight:bold;
+                font-family:Arial; margin-left: 100px; margin-top: -48px; padding: 13px 25px 13px 25px; box-shadow: red inset 0 0 15px;">
+               Email doesn\'t match 
+                </div>';
+             echo '<script>
+           setTimeout(function() {
+               document.getElementById("error-message").style.display = "none";
+           }, 5000); // 5000 milliseconds = 5 seconds
+            </script>';
             }
 
            }

@@ -54,9 +54,9 @@ if (isset($_SESSION["user"])){
 
                 $errors = array();
 
-                if(empty($first_name) || empty($last_name) || empty($email) || empty($password) || empty($ConfirmPassword)){
+                if(empty($first_name) && empty($last_name) && empty($email) && empty($password) && empty($ConfirmPassword)){
                     array_push($errors, "all fields shouldn't be empty <br>");
-                }
+                }else{
                 if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                     array_push($errors, "email isn't valid <br>");
                 } 
@@ -73,6 +73,7 @@ if (isset($_SESSION["user"])){
                 if($rowCount>0){
                     array_push($errors, "Email Already Exists");
                 }
+            }
                 if(count($errors)>0){
                     foreach($errors as $error){
                         echo $error;
@@ -91,7 +92,8 @@ if (isset($_SESSION["user"])){
                         die("something went wrong");
                     }
                 }
-            }
+            
+        }
             
             ?>
             <form class="register-container" id="register" action="register.php" method="post">

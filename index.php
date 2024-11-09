@@ -15,6 +15,7 @@ if (!isset($_SESSION["user"])){
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="movie.css">
 </head>
 <body>
     <nav>
@@ -30,9 +31,136 @@ if (!isset($_SESSION["user"])){
             <li><a href="logout.php">logout</a></li>
         </ul>
     </nav>
-    <div class="box1">
-        <p class="pagex">USER INTERFACE WILL BE DEVELOPED BY US ON NEXT SEMESTER</p>
+
+    <div class="grid">
+    <div class="main">
+        <div class="movie">
+           
+        <img class="movie-pic "src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bhool-bhulaiyaa-3-et00353996-1728474428.jpg">
+       
     </div>
+    <div class="info">
+        <p class="name">bhool bhulaiyaa 3</p>
+        <p class="type"><span class="genre">Genre :</span>Horror, Comedy</p>
+        <p class="time"><span class="duration"> Duration :</span> 2.7 hours</p>
+        <p class="date1"><span class="date">Date : 01-11-2024</span></p>
+        
+
+    </div>
+    </div>
+
+    <div class="main">
+        <div class="movie">
+           
+        <img class="movie-pic "src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bhool-bhulaiyaa-3-et00353996-1728474428.jpg">
+       
+    </div>
+    <div class="info">
+        <p class="name">bhool bhulaiyaa 3</p>
+        <p class="type"><span class="genre">Genre :</span>Horror, Comedy</p>
+        <p class="time"><span class="duration"> Duration :</span> 2.7 hours</p>
+        <p class="date1"><span class="date">Date : 01-11-2024</span></p>
+        
+
+    </div>
+    </div>
+
+    <div class="main">
+        <div class="movie">
+           
+        <img class="movie-pic "src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bhool-bhulaiyaa-3-et00353996-1728474428.jpg">
+       
+    </div>
+    <div class="info">
+        <p class="name">bhool bhulaiyaa 3</p>
+        <p class="type"><span class="genre">Genre :</span>Horror, Comedy</p>
+        <p class="time"><span class="duration"> Duration :</span> 2.7 hours</p>
+        <p class="date1"><span class="date">Date : 01-11-2024</span></p>
+        
+
+    </div>
+    </div>
+
+    <div class="main">
+        <div class="movie">
+           
+        <img class="movie-pic "src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bhool-bhulaiyaa-3-et00353996-1728474428.jpg">
+       
+    </div>
+    <div class="info">
+        <p class="name">bhool bhulaiyaa 3</p>
+        <p class="type"><span class="genre">Genre :</span>Horror, Comedy</p>
+        <p class="time"><span class="duration"> Duration :</span> 2.7 hours</p>
+        <p class="date1"><span class="date">Date : 01-11-2024</span></p>
+        
+
+    </div>
+    </div>
+
+    <div class="main">
+        <div class="movie">
+           
+        <img class="movie-pic "src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bhool-bhulaiyaa-3-et00353996-1728474428.jpg">
+       
+    </div>
+    <div class="info">
+        <p class="name">bhool bhulaiyaa 3</p>
+        <p class="type"><span class="genre">Genre :</span>Horror, Comedy</p>
+        <p class="time"><span class="duration"> Duration :</span> 2.7 hours</p>
+        <p class="date1"><span class="date">Date : 01-11-2024</span></p>
+        
+
+    </div>
+    </div>
+
+    <div class="main">
+        <div class="movie">
+           
+        <img class="movie-pic "src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bhool-bhulaiyaa-3-et00353996-1728474428.jpg">
+       
+    </div>
+    <div class="info">
+        <p class="name">bhool bhulaiyaa 3</p>
+        <p class="type"><span class="genre">Genre :</span>Horror, Comedy</p>
+        <p class="time"><span class="duration"> Duration :</span> 2.7 hours</p>
+        <p class="date1"><span class="date">Date : 01-11-2024</span></p>
+        
+
+    </div>
+    </div>
+
+    <div class="main">
+        <div class="movie">
+           
+        <img class="movie-pic "src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bhool-bhulaiyaa-3-et00353996-1728474428.jpg">
+       
+    </div>
+    <div class="info">
+        <p class="name">bhool bhulaiyaa 3</p>
+        <p class="type"><span class="genre">Genre :</span>Horror, Comedy</p>
+        <p class="time"><span class="duration"> Duration :</span> 2.7 hours</p>
+        <p class="date1"><span class="date">Date : 01-11-2024</span></p>
+        
+
+    </div>
+    </div>
+
+    <div class="main">
+        <div class="movie">
+           
+        <img class="movie-pic "src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bhool-bhulaiyaa-3-et00353996-1728474428.jpg">
+       
+    </div>
+    <div class="info">
+        <p class="name">bhool bhulaiyaa 3</p>
+        <p class="type"><span class="genre">Genre :</span>Horror, Comedy</p>
+        <p class="time"><span class="duration"> Duration :</span> 2.7 hours</p>
+        <p class="date1"><span class="date">Date : 01-11-2024</span></p>
+        
+
+    </div>
+    </div>
+</div>
     
 </body>
 </html>

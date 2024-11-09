@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+p{
+    color: white;
+}
+span{
+  color: white;
+}
+body{
+    background-color: grey;
+    height: 1500px;
+}
+.movie{
+ box-shadow: red 0 0 10px;
+ padding: 3px;
+ 
+}
+
+.movie-pic{
+    width: 200px;
+}
+.name{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.genre{
+    font-weight: bold;
+}
+.duration{
+    font-weight: bold;
+}
+.date{
+    font-weight: bold
+}
+.main{
+    margin-top: 15px;
+    border: solid black 3px;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: red 0 0 10px;
+}
+.info{
+    box-shadow: aqua 0 0 10px;
+    margin-top: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 170px;
+    row-gap: 20px;
+}

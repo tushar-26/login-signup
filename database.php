@@ -17,4 +17,4 @@ $conn = mysqli_connect($db_server,
 if(!$conn){
     die("there was a any problem");
 }
-?>
+
